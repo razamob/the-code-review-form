@@ -1,0 +1,226 @@
+html {
+  font-size: 10px;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+main,
+section {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+header {
+  background-color: #2d3946;
+  font-size: 1.5rem;
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  align-self: center;
+  font-weight: lighter;
+}
+
+.intro {
+  text-align: center;
+  border-bottom: #2d3946 solid 5px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.intro h2 {
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  color: #c2c5c9;
+}
+
+main {
+  border-top: #2d3946 solid 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.form section {
+  padding-left: 0;
+  padding-right: 0;
+}
+fieldset {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+
+.form-body {
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+.legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+form input,
+form select {
+  background-color: #eff0f1;
+  border: none;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+}
+select {
+  color: #afb4b8;
+}
+
+#fname,
+#email {
+  text-align: right;
+}
+
+label {
+  color: #9ea9b2;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #afb4b8;
+  margin-right: 1rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #afb4b8;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #afb4b8;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #afb4b8;
+}
+
+#zip {
+  width: 40%;
+}
+
+.form-inputs {
+  border-bottom: #2d3946 solid 2px;
+}
+
+.form-inputs input,
+.form-inputs select {
+  display: block;
+  width: 100%;
+  padding: 2.25rem;
+}
+
+/* NEWSLETTER SECTION */
+
+.newsletter input {
+  margin-top: 0;
+}
+
+.newsletter label {
+  display: inline;
+}
+
+.news-format {
+  margin-top: 2rem;
+}
+
+.newsletter label,
+.newsletter p {
+  color: #9ea9b2;
+}
+
+.other {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.other textarea {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #eff0f1;
+  border: none;
+}
+
+.submit {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: #fff;
+  background-color: #48bbb6;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+input[type="text"]:focus {
+  border: solid 1px #48bbb6;
+  outline: none !important;
+  box-shadow: 0 0 10px #719ece;
+}
+
+/* DESKTOP QUERIES */
+
+@media (min-width: 786px) {
+  .intro,
+  .form-body {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .form-body {
+    margin-top: 0.3rem;
+  }
+
+  section.intro {
+    margin-top: 4rem;
+  }
+
+  .form {
+    margin-top: 4rem;
+  }
+
+  .form-inputs input,
+  .form-inputs select {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .form-inputs label {
+    width: 20%;
+    display: inline-block;
+  }
+}
